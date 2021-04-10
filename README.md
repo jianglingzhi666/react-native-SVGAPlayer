@@ -9,13 +9,12 @@
 
 `$ react-native link react-native-svga`
 
-### Manual installation
 
 #### Android
 
 添加混淆规则
 
--keep class com.squareup.wire.** { *; }
+-keep class com.squareup.wire.** { *; } </br>
 -keep class com.opensource.svgaplayer.proto.** { *; }
 
 #### iOS
