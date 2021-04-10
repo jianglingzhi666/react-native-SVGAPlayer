@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install react-native-svgaplayer --save`
+`$ npm install react-native-svga --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-svgaplayer`
+`$ react-native link react-native-svga`
 
 ### Manual installation
 
