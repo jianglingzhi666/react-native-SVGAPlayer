@@ -11,10 +11,17 @@
 
 ### Manual installation
 
+#### Android
+
+添加混淆规则
+
+-keep class com.squareup.wire.** { *; }
+-keep class com.opensource.svgaplayer.proto.** { *; }
 
 #### iOS
 
 在podfile 添加 pod 'SVGAPlayer', '~> 2.3'
+
 
 
 ## 属性
