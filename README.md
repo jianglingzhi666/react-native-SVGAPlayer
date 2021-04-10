@@ -3,11 +3,11 @@
 
 ## 安装
 
-`$ npm install svgaplayer-react-native --save`
+`$ npm install svgaplayer-react-native`
 
 ### React Naitve <= 5.9
 
-`$ react-native link react-native-svga`
+`$ react-native link svgaplayer-react-native`
 
 
 #### Android
