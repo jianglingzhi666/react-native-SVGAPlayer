@@ -1,11 +1,11 @@
 
 # react-native-svgaplayer
 
-## Getting started
+## 安装
 
-`$ npm install react-native-svga --save`
+`$ npm install svgaplayer-react-native --save`
 
-### Mostly automatic installation
+### React Naitve <= 5.9
 
 `$ react-native link react-native-svga`
 
@@ -14,32 +14,37 @@
 
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-svgaplayer` and add `RNSvgaplayer.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNSvgaplayer.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.svgaplayer.RNSvgaplayerPackage;` to the imports at the top of the file
-  - Add `new RNSvgaplayerPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-svgaplayer'
-  	project(':react-native-svgaplayer').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-svgaplayer/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-svgaplayer')
-  	```
+在podfile 添加 pod 'SVGAPlayer', '~> 2.3'
 
 
-## Usage
-```javascript
-import RNSvgaplayer from 'react-native-svgaplayer';
+## 属性
+url
+仅支持网络路径
+loops
+循环播放次数0为无限循环
+autoPlay
+加载完成后是否自动播放
+>> * true(默认)自动播放
+>> * false
+fillMode
+播放完成后保留第一帧或最后一帧
+>> * Backward最后一针
+>> *Forward第一帧
+clearsAfterStop
+播放完成后是否清除画布
+>> *true(默认)清除
+>> *false
+onComplete
+加载完成时回调
+onError
+加载错误时回调
+onPause
+暂停时回调
+onFinished
+播放完成时回调(无限循环时不会触发)
+onRepeat
+重复播放时触发
+onStep(frame:string,percentage:number)
+播放进度回调返回当前帧与进度
 
-// TODO: What to do with the module?
-RNSvgaplayer;
-```
-  # react-native-SVGAPlayer
+
