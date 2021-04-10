@@ -1,6 +1,3 @@
+import ReactNativeSVGA from './ReactNativeSVGA';
 
-import { NativeModules } from 'react-native';
-
-const { RNSvgaplayer } = NativeModules;
-
-export default RNSvgaplayer;
+export default ReactNativeSVGA;
